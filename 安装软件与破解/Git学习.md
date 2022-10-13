@@ -111,8 +111,15 @@ git log --pretty=oneline
 
 ###### ==提交==线上仓库`git push`
 
+**作用：**让线上仓库与本地仓库一致
+
+![image-20221013210830494](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210132108542.png)
+
 ###### ==拉取==线上仓库`git pull`
 
-#### 基于SSL协议
+**作用：**让本地仓库与线上仓库一致
 
+![image-20221013210917954](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210132109993.png)
+
+#### 基于SSL协议
 
