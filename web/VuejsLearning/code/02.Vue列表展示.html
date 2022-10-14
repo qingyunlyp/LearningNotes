@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="animes">
+            <ul v-for="item in animes">
+                <li>{{item}}</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                animes:['海贼王','火影忍者','死神','盾之勇者成名录','尸兄']  
+            }
+        })
+    </script>
+</body>
+</html>
