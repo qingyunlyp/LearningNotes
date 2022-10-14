@@ -18,72 +18,72 @@ GitHub是一个为用户提供Git服务的**网站**，简单的说就是一个�
 
 Git本地操作的三个区域：
 
-**工作区（Working Directory）**<br>添加、编辑、修改文件等动作
+**工作区（Working Directory）**
+添加、编辑、修改文件等动作
 
-**暂存区**<br>暂存已经修改的文件最后统一提交到git仓库中
+**暂存区**
+暂存已经修改的文件最后统一提交到git仓库中
 
-**Git Repository（Git仓库）**<br>最终确定的文件保存到仓库，成为一个新的版本，并且对他人可见
+**Git Repository（Git仓库）**
+最终确定的文件保存到仓库，成为一个新的版本，并且对他人可见
 
-![Git工作流程](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210121118741.jpg)
+![](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210121118741.jpg#crop=0&crop=0&crop=1&crop=1&id=HBqiC&originHeight=840&originWidth=1250&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 #### 本地仓库操作
-
 `仓库有名版本库，英文名repository，可以简单的理解成一个目录，用于存放代码，这个目录所有文件都可以被Git管理起来，给个文件的修改删除等操作Git都能找到`
 
 安装好Git之后首次使用需要先进行**全局配置**
 
 打开Git命令窗口
-
 ```shell
 git config --global user.name "输入自己的用户名"
 git config --global user.email "输入自己的邮箱"
 ```
 
 #### 创建仓库
-
-当我们需要让Git去管理某个新项目/已存在项目的时候，就需要创建仓库。<br/>**注意**：尽量不要出现中文
+当我们需要让Git去管理某个新项目/已存在项目的时候，就需要创建仓库。
+**注意**：尽量不要出现中文
 
 #### Git仓库初始化
-
-让Git知道管理仓库<br>指令：`git init`<br>
-
+让Git知道管理仓库
+指令：`git init`
 ```shell
 git init
 ```
 
 #### git常用指令
 
-##### `git status`   查看当前状态
+##### `git status`   查看当前状态
 
-##### `git add 文件名`  添加到缓冲区
+##### `git add 文件名`  添加到缓冲区
 
 `git add`指令可以添加一个文件，也可以添加多个文件
 
-```sh
+```shell
 git add 文件名  //添加一个文件
 git add 文件名1 文件名2...  //添加多个文件
 git add .    添加多个文件
 ```
 
-##### `git commit -m "注释内容"`  提交到版本库
+##### `git commit -m "注释内容"`  提交到版本库
 
 #### 版本回退
 
 ##### 1.查看版本`git log`
 
-```sh
+```shell
 git log   
 git log --pretty=oneline
-两者都是显示版本信息的区别是 `--pretty=oneline`是：在一行显示版本号和注释 
+两者都是显示版本信息的区别是 `--pretty=oneline`是：在一行显示版本号和注释
 ```
 
-![image-20221013161048935](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210131610988.png)
+![](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210131610988.png#crop=0&crop=0&crop=1&crop=1&id=kfGGl&originHeight=363&originWidth=725&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ##### 2.回退指令 `git reset --hard 提交编号`
 
 ##### 3.查询历史操作 `git reflog`
 
-![image-20221013195720234](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210131957280.png)
+![](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210131957280.png#crop=0&crop=0&crop=1&crop=1&id=kcWXO&originHeight=191&originWidth=743&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ```
 注意：
@@ -101,7 +101,7 @@ git log --pretty=oneline
 
 ##### 使用`clone`指令将项目克隆到本地
 
-![image-20221013205346470](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210132053516.png)
+![](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210132053516.png#crop=0&crop=0&crop=1&crop=1&id=jlGTk&originHeight=137&originWidth=592&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ##### 在仓库上的对应操作
 
@@ -109,31 +109,29 @@ git log --pretty=oneline
 
 ###### 提交本地仓库`git commit -m "注释内容"`
 
-###### ==提交==线上仓库`git push`
+###### 提交线上仓库`git push`
 
 **作用：**让线上仓库与本地仓库一致
 
-![image-20221013210830494](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210132108542.png)
+![](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210132108542.png#crop=0&crop=0&crop=1&crop=1&id=hLFVm&originHeight=181&originWidth=656&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-###### ==拉取==线上仓库`git pull`
+###### 拉取线上仓库`git pull`
 
 **作用：**让本地仓库与线上仓库一致
 
-![image-20221013210917954](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210132109993.png)
+![](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210132109993.png#crop=0&crop=0&crop=1&crop=1&id=kEiEA&originHeight=117&originWidth=829&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 #### 基于SSH协议
-
 与基于http协议相比区别只是在于鉴权方式的不同。也就是说下载和操作里面的文件时只有链接不同，其他操作基本一致。
 
 ##### 主机秘钥生成（需首先需要[安装 OpenSSH 服务器](https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_install_firstuse)）
+ssh-keygen -t rsa -C "[1963043600@qq.com](mailto:1963043600@qq.com)"
 
-ssh-keygen -t rsa -C "1963043600@qq.com"
-
-![image-20221014134618894](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210141346948.png)
+![](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210141346948.png#crop=0&crop=0&crop=1&crop=1&id=cjdtn&originHeight=423&originWidth=658&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ## 分支操作
 
-在开发时往往是团队协作，多人开发，因此一个分支无法满足多人同时开发的需求，并且在分支上工作并不影响其他分支的正常使用，会更加安全，git鼓励开发者使用分支去完成开发任务。
+在开发的时候往往是团队协作，多人进行开发，因此光有一个分支是无法满足多人同时开发的需求的，并且在分支上工作并不影响其他分支的正常使用，会更加安全，git鼓励开发者使用分支去完成一些开发任务。
 
 ### 分支相关指令
 
