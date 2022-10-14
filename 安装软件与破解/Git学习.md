@@ -157,11 +157,9 @@ ssh-keygen -t rsa -C "[1963043600@qq.com](mailto:1963043600@qq.com)"
 
 ![image-20221014153418545](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210141534601.png)
 
+**注意：**切换分支时必须不在删除的分支之下。
+
 #### 合并分支：`git merge 被合并的分支名`
-
-
-
-
 
 
 
