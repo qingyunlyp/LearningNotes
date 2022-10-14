@@ -137,7 +137,11 @@ ssh-keygen -t rsa -C "[1963043600@qq.com](mailto:1963043600@qq.com)"
 
 #### 查看分支：`git branch`
 
+**注意：**当前分支标记`*`
+
 #### 创建分支：`git branch 分支名`
+
+**注意：**创建分支并切换到该分支`git branch -b 新分支名`
 
 #### 切换分支：`git checkout 分支名`
 
