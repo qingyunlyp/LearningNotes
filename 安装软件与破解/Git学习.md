@@ -124,6 +124,14 @@ git log --pretty=oneline
 #### 基于SSH协议
 与基于http协议相比区别只是在于鉴权方式的不同。也就是说下载和操作里面的文件时只有链接不同，其他操作基本一致。
 
+- 生成秘钥：`ssh-keygen`
+
+- 秘钥存储目录：C:\Users\用户\\.ssh
+
+- 公钥名称：id_rsa.pub
+
+- 私钥名称：id_rsa
+
 ##### 主机秘钥生成（需首先需要[安装 OpenSSH 服务器](https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_install_firstuse)）
 ssh-keygen -t rsa -C "[1963043600@qq.com](mailto:1963043600@qq.com)"
 
