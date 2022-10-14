@@ -151,8 +151,25 @@ ssh-keygen -t rsa -C "[1963043600@qq.com](mailto:1963043600@qq.com)"
 
 ![image-20221014152810734](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210141528776.png)
 
-**注意：**创建分支并切换到该分支`git checkout  -b 新分支名`
+**注意：**创建分支并切换到该分支`git checkout -b 新分支名`
 
 #### 删除分支：`git branch -d 分支名`
 
+![image-20221014153418545](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210141534601.png)
+
 #### 合并分支：`git merge 被合并的分支名`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
