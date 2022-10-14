@@ -10,7 +10,7 @@ Git是一个分布式版本控制系统，简单的说就是一个**软件**，�
 
 GitHub是一个为用户提供Git服务的**网站**，简单的说就是一个可以放代码的地方。
 
-## Git的使用
+## Git的基本使用
 
 ### 本地仓库
 
@@ -121,5 +121,28 @@ git log --pretty=oneline
 
 ![image-20221013210917954](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210132109993.png)
 
-#### 基于SSL协议
+#### 基于SSH协议
 
+与基于http协议相比区别只是在于鉴权方式的不同。也就是说下载和操作里面的文件时只有链接不同，其他操作基本一致。
+
+##### 主机秘钥生成（需首先需要[安装 OpenSSH 服务器](https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_install_firstuse)）
+
+ssh-keygen -t rsa -C "1963043600@qq.com"
+
+![image-20221014134618894](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210141346948.png)
+
+## 分支操作
+
+在开发时往往是团队协作，多人开发，因此一个分支无法满足多人同时开发的需求，并且在分支上工作并不影响其他分支的正常使用，会更加安全，git鼓励开发者使用分支去完成开发任务。
+
+### 分支相关指令
+
+#### 查看分支：`git branch`
+
+#### 创建分支：`git branch 分支名`
+
+#### 切换分支：`git checkout 分支名`
+
+#### 删除分支：`git branch -d 分支名`
+
+#### 合并分支：`git merge 被合并的分支名`
