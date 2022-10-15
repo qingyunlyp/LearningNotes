@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        当前计数：{{num}}
+        <button v-on:click="add">+1</button>
+        <button v-on:click="sub">-1</button>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            methods:{
+                add:function(){
+                    console.log("执行add");
+                    this.num++;
+                },
+                sub:function(){
+                    console.log("执行sub");
+                    this.num--;
+                }
+            },
+            data:{
+                num:0
+            }
+        })
+    </script>
+</body>
+</html>

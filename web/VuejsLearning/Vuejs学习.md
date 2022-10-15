@@ -133,11 +133,98 @@
 
 ![image-20221014221754111](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210142217164.png)
 
+**列表数据：**从服务器请求一个列表，将列表展示在HTML
+
+- 在html中使用v-for指令
+- 数据是响应式，数据变化，展示也会变化
+
 ### 案例计数器
+
+```html
+<div id="app">
+    当前计数：{{num}}
+    <button v-on:click="add">+1</button>
+    <button v-on:click="sub">-1</button>
+</div>
+<script src="./js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el:"#app",
+        methods:{
+            add:function(){
+                console.log("执行add");
+                this.num++;
+            },
+            sub:function(){
+                console.log("执行sub");
+                this.num--;
+            }
+        },
+        data:{
+            num:0
+        }
+    })
+</script>
+```
+
+小计数器：
+
+点击+1：num+1；<br>点击-1：num-1；
+
+- 使用`methods`属性，用于在Vue对象中定义方法。
+- 使用`@click`指令监听某个元素的点击事件（方法在`methods`中定义）
 
 ## Vuejs的MVVM
 
-### Vue中的MVVM
+MVVM实际上是M、V、VM，即Model、View、ViewModel的缩写，是一种基于前端开发的构架模式。
+
+Vue中的MVVM
+
+![Vue MVVM](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210151240606.jpg)
+
+- DOM Listeners：DOM监听（实际上就是事件监听，v-model底层也用到了事件）
+- DOM Binding：数据绑定（数据填充到视图层）
+- Plain JavaScript Object：普通的JavaScript对象
+
+1. **View层：**<br>	==视图层==，在开发中，通常就是DOM层，主要作用就是给用户展示各种信息。
+2. **Model层：**<br>	==数据层==，数据可能是我们固定的死数据，但更多的是来自服务器，从网络上请求下来的数据。
+3. **ViewModel层：**<br>	==视图模型层==，视图模型层是View和Model沟通的桥梁。一方面它实现了数据绑定（Data Binding）,将Model的改变实时的反应到View中；另一方面实现了DOM监听（DOM Listener），当DOM发生一些事件时，可以监听到，并在需要的情况下改变对应的Data
+
+![image-20221015110836420](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210151108510.png)
+
+## Vue的options选项
+
+创建Vue实例的时候，会传入对象options。
+
+**options可以包含那些选项呢？**<br>[详情解析](https://v2.cn.vuejs.org/v2/api/)：[API — Vue.js (vuejs.org)](https://v2.cn.vuejs.org/v2/api/)
+
+**其中最基础的有：**
+
+- **`el`**:
+
+  > **类型:**`string | HTMLElement`
+  >
+  > **作用：**决定之后Vue实例会管理哪一个DOM
+
+- **`data`**:
+
+  > **类型:**`Object | Function（组件中data必须是一个函数）`
+  >
+  > **作用：**Vue实例对应的数据对象
+
+- **`methods`**:
+
+  > **类型:**`{[key:string]:Function}`
+  >
+  > **作用：**定义属于Vue的一些方法，可以在其他地方调用，也可以在指令中使用
+
+## Vue生命周期
+
+![image-20221015180454283](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210151804492.png)
+
+
+
+
 
 
 
