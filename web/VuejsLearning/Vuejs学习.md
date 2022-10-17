@@ -86,7 +86,7 @@
 </script>
 ```
 
-![image-20221014214359181](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210142143228.png)
+![image-20221014214359181](https://gitee.com/qingyunlyp/picstore/raw/master/img/202210142143228.png)
 
 #### 代码做了什么？
 
@@ -131,7 +131,7 @@
 </script>
 ```
 
-![image-20221014221754111](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210142217164.png)
+![image-20221014221754111](https://gitee.com/qingyunlyp/picstore/raw/master/img/202210142217164.png)
 
 **列表数据：**从服务器请求一个列表，将列表展示在HTML
 
@@ -180,7 +180,7 @@ MVVM实际上是M、V、VM，即Model、View、ViewModel的缩写，是一种基
 
 Vue中的MVVM
 
-![Vue MVVM](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210151240606.jpg)
+![Vue MVVM](https://gitee.com/qingyunlyp/picstore/raw/master/img/202210151240606.jpg)
 
 - DOM Listeners：DOM监听（实际上就是事件监听，v-model底层也用到了事件）
 - DOM Binding：数据绑定（数据填充到视图层）
@@ -190,7 +190,7 @@ Vue中的MVVM
 2. **Model层：**<br>	==数据层==，数据可能是我们固定的死数据，但更多的是来自服务器，从网络上请求下来的数据。
 3. **ViewModel层：**<br>	==视图模型层==，视图模型层是View和Model沟通的桥梁。一方面它实现了数据绑定（Data Binding）,将Model的改变实时的反应到View中；另一方面实现了DOM监听（DOM Listener），当DOM发生一些事件时，可以监听到，并在需要的情况下改变对应的Data
 
-![image-20221015110836420](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210151108510.png)
+![image-20221015110836420](https://gitee.com/qingyunlyp/picstore/raw/master/img/202210151108510.png)
 
 ## Vue的options选项
 
@@ -220,11 +220,7 @@ Vue中的MVVM
 
 ## Vue生命周期
 
-![image-20221015180454283](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210151804492.png)
-
-
-
-
+![image-20221015110836420](https://gitee.com/qingyunlyp/picstore/raw/master/img/202210151804492.png)
 
 
 

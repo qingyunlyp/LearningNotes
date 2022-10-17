@@ -161,19 +161,19 @@ GitHub慢的话可以直接用我下载的安装包（Windows平台）
 （1）创建GitHub仓库：
 GitHub使用较广，所以申请GitHub账号的步骤省略，直接开始创建GitHub仓库：
 
-![img](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210111924257.webp)
+![img](https://gitee.com/qingyunlyp/picstore/raw/master/img/202210111924257.webp)
 
 （2）GitHub图床的**“token”获取**：
 
-![img](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210111924610.webp)
+![img](https://gitee.com/qingyunlyp/picstore/raw/master/img/202210111924610.webp)
 
 （3）PicGo中GitHub图床设置：
 
-![img](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210111927858.webp)自己设置的域名即后期复制图片网址时链接命名较统一。
+![img](https://gitee.com/qingyunlyp/picstore/raw/master/img/202210111927858.webp)自己设置的域名即后期复制图片网址时链接命名较统一。
 
 
 
 
 
-![image-20221011184022232](https://raw.githubusercontent.com/qingyunlyp/picstore/master/img/202210111840290.png)
+![image-20221011184022232](https://gitee.com/qingyunlyp/picstore/raw/master/img/202210111840290.png)
 
